@@ -73,6 +73,8 @@ users = Users.objects.filter(zip_code=94107)
 
 A Virtual Environment is a tool to keep the dependencies required by different projects in separate places, by creating virtual Python environments for them. It solves the “Project X depends on version 1.x but, Project Y needs 4.x” dilemma, and keeps your global site-packages directory clean and manageable.
 
+##### Use-Case Scenario: Install a package in the virtual environment to simulate how it will affect your application. If it breaks it, dont use it. If it doesn't then hooray!!.
+
 ## Regex!!!!!
 ```
 from django.conf.urls import include, url
