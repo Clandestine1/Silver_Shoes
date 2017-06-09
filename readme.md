@@ -4,7 +4,8 @@
 Django (/ˈdʒæŋɡoʊ/ jang-goh) is a free and open source web application framework, written in Python. A web framework is a set of components that helps you to develop websites faster and easier. Released 21 July 2005.
 ### Django Reinhardt
 <a href="http://imgur.com/njkQ85h"><img src="http://i.imgur.com/njkQ85h.jpg" title="source: imgur.com" /></a>
-####Pioneer of 'Hot' Jazz guitar
+
+#### Pioneer of 'Hot' Jazz guitar
 ## Django ORM
 ORMs provide a high-level abstraction upon a relational database that allows a developer to write Python code instead of SQL to create, read, update and delete data and schemas in their database.
  
@@ -27,6 +28,7 @@ Pip is a package management system that installs software for us, kind of like `
 Generating a basic application structure
 ``django-admin startproject mysite`` 
 generates the following file structure
+
 ``
 mysite/
 manage.py
@@ -50,12 +52,19 @@ urlpatterns = [
    ]
 ```
 This line means that for every URL that starts with admin/, Django will find a corresponding view.
+
 ^ for the beginning of the text
+
 Anything else in the URL definition will be taken literally.
+
 Another example: http://127.0.0.1:8000/post/1/
+
 regex expression: ^post/(\d+)/$
 #### Significance: 
 ^post/ is telling Django to take anything that has post/ at the beginning of the url (right after ^)
+
 (\d+) means that there will be a number (one or more digits) and that we want the number captured and extracted
+
 / tells django that another / character should follow
+
 $ then indicates the end of the URL meaning that only strings ending with the / will match this pattern
