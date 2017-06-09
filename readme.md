@@ -6,9 +6,7 @@ Django (/ˈdʒæŋɡoʊ/ jang-goh) is a free and open source web application fra
 <a href="http://imgur.com/njkQ85h"><img src="http://i.imgur.com/njkQ85h.jpg" title="source: imgur.com" /></a>
 
 #### Pioneer of 'Hot' Jazz guitar
-## Django ORM
-ORMs provide a high-level abstraction upon a relational database that allows a developer to write Python code instead of SQL to create, read, update and delete data and schemas in their database.
- 
+
 ## Installation and Setup Instructions
 Let's get started by opening up our terminal and running the following command:
 ``
@@ -53,6 +51,27 @@ Starts your server here: http://127.0.0.1:8000/
 
 ```python manage.py runserver```
 
+
+## Django ORM
+ORMs provide a high-level abstraction upon a relational database that allows a developer to write Python code instead of SQL to create, read, update and delete data and schemas in their database.
+```
+ SELECT * FROM USERS WHERE zip_code=94107;
+ ```
+ 
+ Translates to:
+ 
+ ```
+ # obtain everyone in the 94107 zip code and assign to users variable
+users = Users.objects.filter(zip_code=94107)
+ ```
+
+
+
+## Virtual Environment
+
+```pip install virtualenv```
+
+A Virtual Environment is a tool to keep the dependencies required by different projects in separate places, by creating virtual Python environments for them. It solves the “Project X depends on version 1.x but, Project Y needs 4.x” dilemma, and keeps your global site-packages directory clean and manageable.
 
 ## Regex!!!!!
 ```
