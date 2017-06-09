@@ -24,12 +24,21 @@ OR
 sudo pip install django
 ``
 The above command will install the Django framework.
-Pip is a package management system that installs software for us, kind of like ``gem install`` or ``npm install``
+
+Pip is a package management system that installs software for us, kind of like 
+
+```gem install``` 
+
+or 
+
+```npm install```
 Generating a basic application structure
-``django-admin startproject mysite`` 
+
+```django-admin startproject mysite``` 
+
 generates the following file structure
 
-``
+```
 mysite/
 manage.py
     
@@ -38,9 +47,13 @@ manage.py
         settings.py
         urls.py
         wsgi.py
-``
+```
+
 Starts your server here: http://127.0.0.1:8000/
-``python manage.py runserver``
+
+```python manage.py runserver```
+
+
 ## Regex!!!!!
 ```
 from django.conf.urls import include, url
